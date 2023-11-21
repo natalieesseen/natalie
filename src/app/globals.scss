@@ -1,5 +1,13 @@
 @use './colors';
+@use './fonts';
 
 body {
+  font-family: fonts.$karla;
   background-color: colors.$bg;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: black!important;
+  opacity: 0.025!important;
+  border-radius: 25px;
 }
