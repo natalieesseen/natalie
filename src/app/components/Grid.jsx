@@ -7,13 +7,9 @@ import '/node_modules/react-resizable/css/styles.css';
 import styles from './grid.module.scss'
 
 import About from '../grid/About'
+import Freelance from '../grid/Freelance';
 
-export const Grid = () => {
-  const layout = [
-    { i: 'about', x: 0, y: 0, w: 2, h: 1, isResizable: false, isBounded: true },
-    { i: 'placeholder', x: 2, y: 0, w: 1, h: 1, isResizable: false, isBounded: true},
-  ];
-
+export const Grid = ({layout}) => {
   return (
     <GridLayout
       className='layout'
@@ -27,6 +23,10 @@ export const Grid = () => {
     >
       <div key='about' className={styles.gridItem}>
         <About />
+      </div>
+
+      <div key='freelance' className={styles.gridItem}>
+        <Freelance />
       </div>
 
       <div key='placeholder' className={styles.gridItem}>placeholder</div>
