@@ -6,6 +6,11 @@ body {
   background-color: colors.$bg;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .react-grid-item.react-grid-placeholder {
   background: black!important;
   opacity: 0.025!important;

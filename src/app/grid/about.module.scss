@@ -1,3 +1,22 @@
+@use '../buttons';
+
 .about {
-  padding: 50px;
+  padding: 25px;
+}
+
+.pfp {
+  border-radius: 20px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  @include buttons.btnBorder;
+
+  > a {
+    text-decoration: none;
+  }
 }
