@@ -5,6 +5,8 @@ const createLayout = (items) => {
     h: item.h || 1,
     isResizable: false,
     isBounded: true,
+
+    opacity: item.opacity || 0,
   }));
 };
 
@@ -17,5 +19,5 @@ export const layout = createLayout([
 export const layoutAbout = createLayout([
   { i: 'about', x: 0, y: 0, w: 2 },
   { i: 'freelance', x: 2, y: 0 },
-  { i: 'placeholder', x: 0, y: 1},
+  { i: 'placeholder', x: 0, y: 1, opacity: 1},
 ]);

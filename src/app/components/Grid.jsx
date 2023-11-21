@@ -21,15 +21,16 @@ export const Grid = ({layout}) => {
       maxRows={4}
       width={1200}
     >
-      <div key='about' className={styles.gridItem}>
-        <About />
-      </div>
-
-      <div key='freelance' className={styles.gridItem}>
-        <Freelance />
-      </div>
-
-      <div key='placeholder' className={styles.gridItem}>placeholder</div>
+      {layout.map(item => (
+        <div
+        key={item.i}
+        className={`${styles.gridItem} ${item.opacity == 1 ? styles.opacity : ''}`}
+        >
+          {item.i === 'about' && <About />}
+          {item.i === 'freelance' && <Freelance />}
+          {item.i === 'placeholder' && 'placeholder'}
+        </div>
+      ))}
     </GridLayout>
   )
 }
