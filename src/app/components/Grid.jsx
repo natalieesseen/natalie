@@ -20,6 +20,8 @@ export const Grid = ({layout}) => {
       rowHeight={250}
       maxRows={4}
       width={1200}
+      isBounded={true}
+      draggableHandle= '.drag'
     >
       {layout.map(item => (
         <div

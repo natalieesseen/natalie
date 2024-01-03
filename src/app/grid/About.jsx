@@ -5,10 +5,12 @@ import styles from './about.module.scss'
 const About = () => {
   return (
     <div className={styles.about}>
-      <Image src='/pfp.png' alt='portrait' className={styles.pfp} width={100} height={100} />
-      <p>
-        Hej 👋 I'm Natalie, a web developer from Sweden.
-      </p>
+      <div className='drag'>
+        <Image src='/pfp.png' alt='portrait' className={styles.pfp} width={100} height={100} />
+        <p>
+          Hej 👋 I'm Natalie, a web developer from Sweden.
+        </p>
+        </div>
       <ul className={styles.btns}>
         <li className={styles.btn}>
           <a href="https://github.com/natalieesseen">GitHub</a>

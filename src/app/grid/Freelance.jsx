@@ -1,11 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './freelance.module.scss'
+import Button from '../components/Button'
 
 const Freelance = () => {
+  const componentUrl = '/freelance';
   return (
     <div className={styles.freelance}>
-      <Image src='/crepe.png' alt='illustration' width={150} height={150} />
+      <div className='drag'>
+        <Image src='/crepe.png' alt='illustration' width={150} height={150} />
+      </div>
+      <Button componentUrl={componentUrl} />
     </div>
   )
 }
