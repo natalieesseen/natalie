@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './button.module.scss'
+import Link from 'next/link'
 
 const Button = ({componentUrl}) => {
   return (
-    <a href={componentUrl ?? ''} className={styles.btn}>a</a>
+    <Link href={componentUrl ?? ''} className={styles.btn}>a</Link>
   )
 }
 
