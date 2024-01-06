@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from '../page.module.css';
+import { getPostData } from '@/utils/content';
 
-function page() {
+const Page = () => {
+  const { content, data } = getPostData('freelance');
+
   return (
     <div className={styles.content}>
-      <h1>Freelancing</h1>
-      <h2>A few words about my freelancing</h2>
+      <h1>{data.title}</h1>
+      <div>{content}</div>
     </div>
   )
 }
 
-export default page
+export default Page
