@@ -1,5 +1,7 @@
 ---
-title: hello world
+title: Sample Post
 ---
 
-hello world content
+This is some *Markdown* content.
+
+<div>This is a div </div>

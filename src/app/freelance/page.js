@@ -8,9 +8,9 @@ const Page = () => {
   return (
     <div className={styles.content}>
       <h1>{data.title}</h1>
-      <div>{content}</div>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
