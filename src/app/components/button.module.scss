@@ -2,6 +2,7 @@
 
 .btn {
   @include buttons.btnBorder;
+
   position: absolute;
   left: 25px;
   bottom: 25px;
@@ -9,5 +10,5 @@
   text-decoration: none;
 
   height: 20px;
-  padding: 8px;
+  padding: 10px;
 }

@@ -1,15 +1,23 @@
+@use './colors';
+
 @mixin btn {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 8px 12px;
   border-radius: 18px;
   transition: all 0.5s;
 }
 
 @mixin btnBorder {
   @include btn;
-  box-shadow: rgb(240, 242, 248) 0px 0px 0px 2px;
+  background-color: colors.$white;
+
+  > * {
+    color: colors.$black!important;
+  }
+
+  box-shadow: rgba(100, 100, 100, 0.08) 0px 0px 0px 2px;
 
   &:hover {
-    box-shadow: rgb(240, 242, 248) 0px 0px 0px 4px;
+    box-shadow: rgba(100, 100, 100, 0.08) 0px 0px 0px 4px;
   }
 }

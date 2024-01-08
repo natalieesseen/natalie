@@ -1,0 +1,8 @@
+@use '../buttons';
+
+.close {
+  @include buttons.btnBorder;
+
+  height: 20px;
+  padding: 10px;
+}
