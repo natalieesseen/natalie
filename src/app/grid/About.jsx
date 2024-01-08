@@ -6,11 +6,11 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className='drag'>
-        <Image src='/pfp.png' alt='portrait' className={styles.pfp} width={100} height={100} />
+        <Image src='/grid/pfp.png' alt='portrait' className={styles.pfp} width={100} height={100} />
         <p>
           Hej 👋 I'm Natalie, a web developer from Sweden.
         </p>
-        </div>
+      </div>
       <ul className={styles.btns}>
         <li className={styles.btn}>
           <a href="https://github.com/natalieesseen">GitHub</a>

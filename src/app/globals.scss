@@ -4,6 +4,8 @@
 body {
   font-family: fonts.$karla;
   background-color: colors.$bg;
+  color: colors.$text;
+  line-height: 1.4;
 }
 
 ul {
@@ -11,8 +13,19 @@ ul {
   padding: 0;
 }
 
+.drag {
+  cursor: grab;
+}
+
 .react-grid-item.react-grid-placeholder {
   background: black!important;
   opacity: 0.025!important;
+  border-radius: 25px;
+}
+
+.portfolioImg {
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
   border-radius: 25px;
 }

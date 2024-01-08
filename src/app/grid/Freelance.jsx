@@ -8,7 +8,7 @@ const Freelance = () => {
   return (
     <div className={styles.freelance}>
       <div className='drag'>
-        <Image src='/crepe.png' alt='illustration' width={150} height={150} />
+        <Image src='/grid/crepe.png' alt='illustration' width={150} height={150} />
       </div>
       <Button componentUrl={componentUrl} />
     </div>

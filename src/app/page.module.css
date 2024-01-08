@@ -1,3 +1,4 @@
 .content {
-  margin: 10vw 20vw;
+  max-width: 600px;
+  margin: 5vw auto;
 }
